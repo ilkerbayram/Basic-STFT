@@ -8,14 +8,14 @@ Created on Thu Oct 20 13:45:04 2016
 
 import numpy
 import STFT
-import pdb
-from pylab import*
+#import pdb
+import pylab
 import matplotlib.pyplot as plt
 from scipy.io import wavfile
 
 # load the observed audio
 fs, x = wavfile.read('observed.wav')
-x = double(x) / 2.**15 # convert integer to double
+x = pylab.double(x) / 2.**15 # convert integer to double
 
 # STFT parameters
 winms = 60 # length of the window in milliseconds
@@ -44,7 +44,7 @@ yr = numpy.real(y)
 
 # check that ISTFT actually inverts the STFT
 t = numpy.arange(0,yr.size)
-t = double(t) / double(fs)
+t = pylab.double(t) / pylab.double(fs)
 
 # plot the original and the difference of the original from the reconstruction
 plt.figure()
