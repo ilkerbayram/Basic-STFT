@@ -8,3 +8,5 @@ Contains phython code for
 4) display the STFT coefficients
 
 A demonstration is provided in DemoSTFT.py
+
+The notebook titled 'GriffinLim' demonstrates the Griffin-Lim algorithm, reconstructing the speech signal from the magnitudes of its STFT coefficients.
