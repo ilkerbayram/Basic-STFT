@@ -10,3 +10,5 @@ Contains phython code for
 A demonstration is provided in DemoSTFT.py
 
 The notebook titled 'GriffinLim' demonstrates the Griffin-Lim algorithm, reconstructing the speech signal from the magnitudes of its STFT coefficients.
+
+A similar repository in Julia is available at https://github.com/ilkerbayram/STFT-Julia.
